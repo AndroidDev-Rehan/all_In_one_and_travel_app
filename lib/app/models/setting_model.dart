@@ -56,6 +56,13 @@ class Setting extends Model {
       this.modules});
 
   Setting.fromJson(Map<String, dynamic> json) {
+
+    // print("\n\nFrom Json called\n\n");
+    print("main color: ${json['main_color']}");
+    print("second color: ${json['second_color']}");
+    print("accent color: ${json['accent_color']}");
+
+
     appName = json['app_name'];
     defaultTax = json['default_tax'];
     defaultCurrency = json['default_currency'];

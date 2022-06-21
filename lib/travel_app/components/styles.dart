@@ -8,9 +8,9 @@
 */
 import 'package:flutter/material.dart';
 
-const appColor = Color(0xFF41CDA4);
-const appColor2 = Color(0xFF3DBCC7);
-const appColor3 = Color.fromARGB(255, 160, 240, 216);
+const appColor = Color(0xFFF4841F);
+const appColor2 = Color(0xFF08143A);
+const appColor3 = Color(0xFF8C9DA8);
 
 const backgroundColor = Color.fromARGB(255, 243, 243, 243);
 

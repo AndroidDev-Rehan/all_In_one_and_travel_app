@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 import '../../../../common/ui.dart';
+import '../../../../travel_app/pages/tabs.dart';
 import '../../../../travel_app/pages/welcome.dart';
 import '../../../models/category_model.dart';
 import '../../../routes/app_routes.dart';
@@ -40,7 +41,7 @@ class CategoryListItemWidget extends StatelessWidget {
               highlightColor: Colors.transparent,
               splashColor: Get.theme.colorScheme.secondary.withOpacity(0.08),
               onTap: () {
-                travelAppWidget ? Get.to(Welcome()) :
+                travelAppWidget ? Get.to(TabsExample()) :
                 Get.toNamed(Routes.CATEGORY, arguments: category);
                 //Navigator.of(context).pushNamed('/Details', arguments: RouteArgument(id: '0', param: market.id, heroTag: heroTag));
               },

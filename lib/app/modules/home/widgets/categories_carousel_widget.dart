@@ -2,8 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-
-import '../../../../travel_app/pages/welcome.dart';
+import '../../../../travel_app/pages/tabs.dart';
 import '../../../routes/app_routes.dart';
 import '../controllers/home_controller.dart';
 
@@ -25,7 +24,7 @@ class CategoriesCarouselWidget extends GetWidget<HomeController> {
                 onTap: () {
                   print("hi");
                   if(_category.name == "Travel App" ||  _category.name == "Travel Services" || _category.name == "Car Services" ||   _category.name == "Travel Services") {
-                    Get.to(Welcome());
+                    Get.to(TabsExample());
                     return;
                   }
                   Get.toNamed(Routes.CATEGORY, arguments: _category);
